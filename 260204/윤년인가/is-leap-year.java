@@ -11,9 +11,9 @@ public class Main {
     	} else {
     		year = false;
     	}
-    	if(x%100==0) {
+    	if(x%100==0 && x%400!=0) {
     		year=false;
-    	}
+    	} 
     	System.out.println(year);
     }
 }
