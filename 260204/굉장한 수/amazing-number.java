@@ -6,9 +6,9 @@ public class Main {
     	Scanner sc = new Scanner(System.in);
     	int x = sc.nextInt();
     	if((x%2==1 && x%3==0) || (x%2==0 && x%5==0)) {
-    		System.out.println("True");
+    		System.out.println("true");
     	} else {
-    		System.out.println("False");
+    		System.out.println("false");
     	}
     }
 }
