@@ -12,6 +12,12 @@ public class Main {
                 grid[i][j] = sc.nextInt();
         
         int cnt = 0;
+        
+        if(m==1) {
+        	System.out.println(2*n);
+        	return;
+        }
+        
         for (int i = 0; i < n; i++) {
         	int con = 1;
 			for (int j = 1; j < n; j++) {
@@ -20,7 +26,7 @@ public class Main {
 				} else {
 					con = 1;
 				}
-				if(con==m) {
+				if(con>=m) {
 					cnt++;
 					break;
 				}
@@ -32,7 +38,7 @@ public class Main {
 				} else {
 					con = 1;
 				}
-				if(con==m) {
+				if(con>=m) {
 					cnt++;
 					break;
 				}
