@@ -20,9 +20,10 @@ public class Main {
 				} else {
 					con = 1;
 				}
-			}
-			if(con>=m) {
-				cnt++;
+				if(con==m) {
+					cnt++;
+					break;
+				}
 			}
 			con = 1;
 			for (int j = 1; j < n; j++) {
@@ -31,9 +32,10 @@ public class Main {
 				} else {
 					con = 1;
 				}
-			}
-			if(con>=m) {
-				cnt++;
+				if(con==m) {
+					cnt++;
+					break;
+				}
 			}
 		}
         
